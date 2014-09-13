@@ -38,3 +38,32 @@ git push ... push to git hub..
 
 git remote Add github <url>  github is the nick name only 
 git push github master
+
+git diff
+
+digital ocean 
+droplet >> new intance of virtual server 
+select image with preinstalled 
+application tap lamp 14.24 
+have to add ssh key 
+all droplet will have unit ip
+ssh root@ipaddress 
+create tunnel to remote server 
+git clone ssh site link 
+
+getting domain p1.yourname.com 
+/var/www/html/p1/ 
+1 droplet for all four project 
+git pull origin master 
+
+
+C:\Users\itsxl
+λ ssh-keygen -t rsa -C "simonlee@g.harvard.edu
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/itsxl/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/itsxl/.ssh/id_rsa.
+Your public key has been saved in /c/Users/itsxl/.ssh/id_rsa.pub.
+The key fingerprint is:
+c0:fc:0b:a8:95:3b:d7:c0:e1:73:56:f5:9f:71:bd:7f simonlee@g.harvard.edu
