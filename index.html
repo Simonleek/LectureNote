@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simon Lee CSC E15 Project 1</title>
+<link href="P1CSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<script language="JavaScript">
+<!--
+function resize_iframe()
+{
+
+	var height=window.innerWidth;//Firefox
+	if (document.body.clientHeight)
+	{
+		height=document.body.clientHeight;//IE
+	}
+	//resize the iframe according to the size of the
+	//window (all these should be on the same line)
+	//document.getElementById("src").style.height=parseInt(height-
+	//document.getElementById("src").offsetTop-8)+"px";
+	document.getElementById("src").style.height=document.getElementById("src").contentWindow.document.body.scrollHeight + 'px';
+}
+
+// this will resize the iframe every
+// time you change the size of the window.
+window.onresize=resize_iframe; 
+
+//Instead of using this you can use: 
+//	<BODY onresize="resize_iframe()">
+
+
+//-->
+</script>
+<div id="Header"> 
+<h1>Simon Lee: Dynamic Web Apps Portfolio</h1></div>
+<ul id="nav">
+        <li>
+            <a href="#">P1:Portfolio Setup &#9662;</a>
+            <ul>
+                <li><a href="#">Project Description</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Github</a></li>
+            </ul>
+        </li>
+                <li>
+            <a href="#">P2:PHP Basics &#9662;</a>
+            <ul>
+                <li><a href="#">Project Description</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Github</a></li>
+            </ul>
+        </li>
+                <li>
+            <a href="#">P3:Framework Basics &#9662;</a>
+            <ul>
+                <li><a href="#">Project Description</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Github</a></li>
+            </ul>
+        </li>
+                <li>
+            <a href="#">P4: Comprehensive Final&#9662;</a>
+            <ul>
+                <li><a href="#">Project Description</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Github</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br />
+<br />
+<br />
+<div id="Container">
+
+<iframe id="src" frameborder="0" style="margin-left: 0px;overflow: hidden; height: 100%; z-index: 1;
+        width: 100%; position:absolute;" height="100%" width="100%" src="http://codingforums.com/html-css/175533-my-iframe-layer-cover-my-drop-down-menu-~-help.html" ></iframe></div>http://lecturenote.simonleetoronto.me/HellowWorkhtml.html
+http://www.simonleetoronto.me/
+<div id="Footer">
+Fall 2014 
+</div>
+</body>
+</html>

@@ -68,3 +68,8 @@ Your identification has been saved in /c/Users/itsxl/.ssh/id_rsa.
 Your public key has been saved in /c/Users/itsxl/.ssh/id_rsa.pub.
 The key fingerprint is:
 c0:fc:0b:a8:95:3b:d7:c0:e1:73:56:f5:9f:71:bd:7f simonlee@g.harvard.edu
+
+domain of http://simonleetoronto.me/lecturenote/HellowWorkhtml.html is created. ..  
+ssh root@104.131.61.10 << to connect to digital ocean
+https://cloud.digitalocean.com/droplets 
+https://manage.www.namecheap.com/myaccount/modsingle.asp?domain=simonleetoronto.me&type=hosts

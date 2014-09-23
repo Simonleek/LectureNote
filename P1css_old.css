@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body{
+	 text-align:center;
+	 background: #B0BFC2;
+	 color: #444;
+	 font-family:arial;
+}#Header
+{
+	text-align: Center;
+	margin: 0 0;
+	
+	background: #FFF ;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+}
+#Header H1{
+	text-align: Center;
+	background: #D36832;
+	color: #FFF;
+	margin: 0;
+	border-bottom: 5px solid #387A9B;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+}
+#Body{
+	text-align: Center;
+}
+#TableBody {
+   width: 100%;
+   border: 0px solid black;
+}
+#SideColumn{
+	width: 30%;
+	border: 0px solid black;
+}
+#CenterColumn{
+	width: 400px;
+	border: 0px solid black;
+}
+#main{
+	text-align: left; 
+	width::100%;
+}
+#ProfilePic{
+	align-items:center;
+}

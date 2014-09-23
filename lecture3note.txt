@@ -1,0 +1,57 @@
+code island is the block of php code 
+<?php echo $total; ?> is the same as <?=$total?>
+there is no semi-colin because its the last line? 
+php no need to define the valuable type e.g. $name = 'simon'; it is all based on context. 
+
+<?pho error_reporting(E_ALL);> on the very top of the html page to give me proper reporting
+fatal error, warning, notice 
+development, want to see all 3, but on production, you want to hide all of them 
+E_ALL is a built in constant
+ini_set('display_errors',1);
+
+<?php
+
+// Turn off all error reporting
+error_reporting(0);
+
+// Report simple running errors
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// Reporting E_NOTICE can be good too (to report uninitialized
+// variables or catch variable name misspellings ...)
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+// Report all errors except E_NOTICE
+error_reporting(E_ALL & ~E_NOTICE);
+
+// Report all PHP errors (see changelog)
+error_reporting(E_ALL);
+
+// Report all PHP errors
+error_reporting(-1);
+
+// Same as error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+
+?>
+
+phpinfo(); show the information of php on the server. 
+
+local error log file C:\xampp\php\logs\php_error_log
+how to change error to on and off -> php.ini file not httpd.config which is apache config file 
+C:\xampp\php\php.ini
+
+ 
+// to comment
+
+you can take out the php block and create a new file and save as logic.php 
+and use <?php require('logic.php'); ?>  << logic is ran as html pass thorugh this line
+
+
+$statement = " you are $age years old";
+$statement = 'you are '.$age.'years old';
+
+do not repeat yourself principle
+
+//string date ( string $format [, int $timestamp = time() ] )
+[] is optional and will default to current time here. 
