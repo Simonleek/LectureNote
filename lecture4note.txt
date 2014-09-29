@@ -1,0 +1,59 @@
+lecture 4 
+
+css and php
+using css class, create multiple class in css, in php code, return class name feed into the html 
+so that the html know which class to falls into 
+therefore, we can adjust style of multiple valuable in one valuable
+
+ok to have php in th html to generate view in html 
+<?php foreach($contestants as $key => $value): ?>
+    <?=$key?> is a <?=$value?>
+<?php endforeach; ?>
+
+<?php for($i=0; $<10;$i++); ?>
+    <?=$key?> is a <?=$value?>
+<?php endfor; ?>
+
+
+in the php file with no ?> closing php? because it is the last a space can pervent cookie or redirect
+general rule don't close if it is just output
+the code is already sent to the page? 
+
+quick way to display content of array
+<pre>
+    <?php print_r($contestants); ?>
+</pre
+
+associative array, using string key as index
+
+<?php	
+	$arrayname['key1'] = 'value';
+	$random=rand(0,count($arrayname)-1);
+	$arrayname[$random] = "winner"; << if the key is numeric
+	$count=0;
+	foreach ($arrayname as $key => $value){
+		if ($count == $random ){
+			$constants[$key] = 'winner';
+			break;
+		}
+		count ++;
+	}
+	$winner = array_rand($arrayname);
+	$arrayname[$winner] = "winner";
+	
+use get, 
+all the data on the form will travel on URL 
+
+use POST the form data is not on the URL
+print_r $_POST
+
+<?php
+$contestants=Array();
+foreach ($_POST as $key => $value) {
+	$contestants[$key] = 'Loser' ; //$key is the name of the field in the html post. 
+									//here we are generating a list of input user name as index/key in the constestants array_rand.
+									//the value is all loser until a winner is selected
+	}
+	$winner = array_rand($contestants); 
+	$constestants[$winner] ="winner";
+} 
