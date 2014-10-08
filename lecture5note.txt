@@ -1,0 +1,36 @@
+$ composer create-project laravel/laravel foobooks --prefer-dist  
+prefer-source
+
+Command - to store command line script
+config - all the application config files (local - for local app/ production for production env) 
+controllers - c part of the mvc, controller is going to be in charge of application logic 
+		- home controller, 
+language - localization for differnt languages 
+start - bootstrap files, 
+storeage -  make writable, cache log, session, views  where larval can put stuff
+test - test driven development, all test will go there 
+view - that's the face of the applcaiton 
+bootstrap - starting pt of the application 
+public - css and java script, accessable to the browser 
+vendor - all the dependance of larval 
+project read me file 
+composer .log 
+
+routing - localhost, what determine what is show - route.php file is the map of the entire applicaiton 
+reading the url and program what to do with the url 
+
+in public htaccess file >> dictate what happen when traffic 
+>> key part is rewrite rule ^ index.php 
+capture path and send to index.php 
+index.php boot up the application, parse url and send to route and route get it 
+
+restful routing 
+
+{route parameter}
+route:: get("/books/{category}", function(category)){
+	return "here are all the books in the category" " .$category;
+});
+
+rote:: get('/books', function()){
+	return "here are all the books...";
+});
