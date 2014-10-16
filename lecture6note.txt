@@ -1,0 +1,47 @@
+CRUD 
+- Create 
+- Read 
+- Update 
+- Delete
+
+
+Route Table 
+Purpose 						Method 			URI 
+Welcome Home Page				Get				forward slash /
+List all books|search result 					list
+display a form to add book		get				/add
+Add books|search				Post			/add
+
+scratch out plan for p3 
+
+build home page 
+add logo 
+add search box
+
+php aritisan route
+
+json = double quote  last entry in a set has no comma
+save json in database just becasue it is logical
+
+$path=files::get(app_path. "/database/books.json");
+explict to the path of the file 
+file get is expecting a full path to the file 
+
+$strbook=jason_decode($books, true); // string array
+
+https://packagist.org/  centralize location for packages 
+composer.json in root of project 
+add in required 
+
+"require": {
+        "laravel/framework": "4.1.*",
+        "paste/pre": "dev-master"
+},
+
+composer install for production
+composer update / update the lock file ... -> local 
+need to specify name space ...   echo Past\Pre::render($array);
+
+use Paste\Pre;
+
+inside app config app.php where there is a section call alisas 'Pre' => 'Paste\Pre', 

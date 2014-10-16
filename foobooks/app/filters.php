@@ -88,3 +88,14 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+
+/*
+Route::filter('birthday', function($route, $request, $date, $first, $second)
+{
+    if (date('d/m') == $date) {
+		return "{$first} - {$second} aa";
+        return View::make('birthday');
+    }
+});
+/*
