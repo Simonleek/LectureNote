@@ -1,0 +1,28 @@
+lecture 7 note
+controller, we should put code on controller but we will put code in route for now
+you don't need to write a customer class in p3
+
+route::get{'/list/{format?}, function($format='html')
+? makes format optional, default is html if no parmarter is passed. 
+
+if none of the if matchs, then you get nothing in the page? not error! 
+you need an else to catch it? 
+route is  case senistive you need to put to lower or something to catch them
+
+use ->with($data) to pass data array to the view 
+or use 
+return View::make('list')
+->with('name', 'susan')
+->with('lastname','buck');
+
+<?pho echo $name; ?>  in blade {{$name}}
+<?foreach ...
+@foreach
+@endforeach
+
+put clases in composer.jason, autoload section...
+module is db related  Uppercase class name filename are singluar (e.g, man not men) 
+
+
+{{{ to protect cross site scripting (XSS) 
+csrf protected by token

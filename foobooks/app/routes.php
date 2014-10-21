@@ -10,6 +10,11 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get('/', function()
+{
+	return View::make('oop');
+});
+
 Route::get('flights/{day_of_week}', function($day_of_week)
 {
 	$days = Array ('mo','tu','we','tr','fr','sa','su');
